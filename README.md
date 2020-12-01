@@ -14,3 +14,6 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+# FIREBASE CONFIGURATION
+For security purposes my google-services file is not commited in this project. To use this project, please download a copy of your google service settings from a project in your Firebase Console!
