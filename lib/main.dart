@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_fun_auth/authentication_service.dart';
+import 'package:sign_button/sign_button.dart';
 
 void main() async {
   // ignore: unused_local_variable
@@ -143,6 +144,22 @@ class LoginScreen extends StatelessWidget {
                 },
                 child: Text('Sign Up'),
               ),
+              Divider(
+                thickness: 3,
+                endIndent: 20,
+                indent: 20,
+              ),
+              SignInButton(
+                buttonType: ButtonType.google,
+                onPressed: () async {
+                  await AuthService().handleGoogleSignIn().then(
+                        (_) => Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => MyApp()),
+                        ),
+                      );
+                },
+              )
             ],
           ),
         ),
