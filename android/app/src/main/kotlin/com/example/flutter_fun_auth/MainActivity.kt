@@ -1,4 +1,4 @@
-package com.example.flutter_fun_auth
+package com.mellowcodelabs.funflutterauth
 
 import io.flutter.embedding.android.FlutterActivity
 
